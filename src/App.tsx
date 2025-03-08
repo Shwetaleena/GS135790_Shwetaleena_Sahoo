@@ -7,18 +7,21 @@ import SKUManagement from './pages/SKUManagement';
 import Planning from './pages/Planning';
 import Charts from './pages/Charts';
 import ErrorPage from './pages/ErrorPage';
+import { Paths } from './utils/enums/paths';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index path="/stores" element={<StoreManagement />} />
-          <Route path="/skus" element={<SKUManagement />} />
-          <Route path="/planning" element={<Planning />} />
-          <Route path="/charts" element={<Charts />} />
+        {/* Layout Wrapper for All Routes */}
+        <Route path={Paths.HOME} element={<Layout />}>
+          <Route index path={Paths.STORE} element={<StoreManagement />} />
+          <Route path={Paths.SKU} element={<SKUManagement />} />
+          <Route path={Paths.PLANNING} element={<Planning />} />
+          <Route path={Paths.CHARTS} element={<Charts />} />
         </Route>
-        <Route path="*" element={<ErrorPage />} />
+        {/* Catch-All Route for 404 */}
+        <Route path={Paths.NOT_FOUND} element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   );
