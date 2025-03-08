@@ -1,9 +1,12 @@
 
 
 const StoreManagement = () => {
+
   return (
-    <div>StoreManagement</div>
-  )
+   <>
+      store
+   </>
+  );
 }
 
 export default StoreManagement
