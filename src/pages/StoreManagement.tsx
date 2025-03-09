@@ -1,12 +1,11 @@
-
+import StoreTable from "../components/StoreTable";
 
 const StoreManagement = () => {
-
   return (
-   <>
-      store
-   </>
+    <div>
+      <StoreTable />
+    </div>
   );
-}
+};
 
-export default StoreManagement
+export default StoreManagement;

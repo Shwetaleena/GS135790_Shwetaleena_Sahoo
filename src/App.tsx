@@ -15,7 +15,8 @@ function App() {
       <Routes>
         {/* Layout Wrapper for All Routes */}
         <Route path={Paths.HOME} element={<Layout />}>
-          <Route index path={Paths.STORE} element={<StoreManagement />} />
+          <Route index element={<StoreManagement />} />
+          <Route path={Paths.STORE} element={<StoreManagement />} />
           <Route path={Paths.SKU} element={<SKUManagement />} />
           <Route path={Paths.PLANNING} element={<Planning />} />
           <Route path={Paths.CHARTS} element={<Charts />} />

@@ -1,9 +1,11 @@
-
+import SKUTable from "../components/SKUTable";
 
 const SKUManagement = () => {
   return (
-    <div>SKUManagement</div>
-  )
-}
+    <div>
+      <SKUTable />
+    </div>
+  );
+};
 
-export default SKUManagement
+export default SKUManagement;
