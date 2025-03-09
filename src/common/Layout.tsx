@@ -40,9 +40,9 @@ function Layout() {
         <Box
           sx={{
             flexGrow: 1,
-            marginLeft: "17%",
+            marginLeft: "12%",
             padding: "5px",
-            marginTop: "16px",
+            marginTop: "25px",
           }}>
           <Outlet />
         </Box>
